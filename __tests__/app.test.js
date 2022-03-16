@@ -16,7 +16,7 @@ describe('quotable routes', () => {
     const res = await request(app)
       .post('/api/v1/profiles')
       .send({ name: 'Test User' });
-
+    
     expect(res.body).toEqual({
       id: expect.any(String),
       name: 'Test User',
